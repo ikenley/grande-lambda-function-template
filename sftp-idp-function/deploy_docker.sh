@@ -9,4 +9,4 @@ IMAGE_URI="924586450630.dkr.ecr.us-east-1.amazonaws.com/sftp-idp-function-test:$
 docker tag sftp-idp-function-test:$VERSION 924586450630.dkr.ecr.us-east-1.amazonaws.com/sftp-idp-function-test:$VERSION
 docker push $IMAGE_URI
 
-# aws lambda update-function-code --region sa-east-1 --function-name sftp-idp-function-test --image-uri $IMAGE_URI
+aws lambda update-function-code --region us-east-1 --function-name sftp-idp-function-test --image-uri $IMAGE_URI
